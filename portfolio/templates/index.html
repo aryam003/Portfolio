@@ -4,231 +4,115 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joy Seno - UI/UX Designer</title>
+    <title></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Custom CSS (if any) -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/s.css') }}">
 
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header_section py-4">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html"><img src="{{ url_for('static',filename='image/logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 150px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Banner Section -->
-    <section class="banner_section layout_padding py-5">
-        <div class="container-fluid">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="banner_taital_main">
-                                    <h3 class="banner_text">Hello I am <br> Arya</h3>
-                                    <h1 class="banner_taital">Full-Stack Web Developer</h1>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <div class="social_icon">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Additional Carousel Items -->
-                    <div class="carousel-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="banner_taital_main">
-                                    <h3 class="banner_text">Hello I am <br> Arya</h3>
-                                    <h1 class="banner_taital">Full-Stack Web Developer</h1>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <div class="social_icon">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="banner-section">
+        <div class="container">
+            <h2 class="banner-text">Hello, I'm Arya</h2>
+            <p class="lead">Full-Stack Web Developer</p>
         </div>
     </section>
-
+    <section class="banner-section-img" style="padding: 10px;">
+        <div class="container text-center">
+            <!-- Image at the top, centered -->
+            <img src="{{ url_for('static',filename='image/img-2.png') }}" alt="Arya" class=" mb-4" style="width: 250px; height: 250px; object-fit: cover;">
+            
+        </div>
+    </section>
     <!-- Services Section -->
-    <section class="services_section layout_padding py-5">
+    <section class="services-section">
         <div class="container">
-            <h1 class="text-center mb-4">My <span class="portfolio_taital_1">Projects</span></h1>
+            <h2 class="text-center mb-5">My Projects</h2>
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box_main text-center p-4">
-                        <div class="app_icon mb-3"><img src="{{ url_for('static',filename='image/icon-1.png') }}" class="img-fluid" alt="1"></div>
-                        <h4 class="services_text">Tiara jewels</h4>
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;">
+                        <h4>Web Design</h4>
+                        <p>Creating beautiful and functional web experiences.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box_main text-center p-4">
-                        <div class="app_icon mb-3"><img src="images/icon-2.png" class="img-fluid" alt="2"></div>
-                        <h4 class="services_text">1</h4>
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('https://via.placeholder.com/300'); background-size: cover; background-position: center;">
+                        <i class="fa fa-mobile-alt fa-3x mb-3"></i>
+                        <h4>Responsive Design</h4>
+                        <p>Ensuring your website looks great on all devices.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box_main text-center p-4">
-                        <div class="app_icon mb-3"><img src="images/icon-3.png" class="img-fluid" alt="3S"></div>
-                        <h4 class="services_text">2</h4>
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('https://via.placeholder.com/300'); background-size: cover; background-position: center;">
+                        <i class="fa fa-laptop-code fa-3x mb-3"></i>
+                        <h4>Web Development</h4>
+                        <p>Building powerful websites with the latest technologies.</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-sm-6">
-                    <div class="box_main text-center p-4">
-                        <div class="app_icon mb-3"><img src="images/icon-4.png" class="img-fluid" alt="Logo Design"></div>
-                        <h4 class="services_text">3</h4>
-                    </div>
-                </div> -->
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Read More</a>
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Section -->
-    <!-- <section class="portfolio_section layout_padding py-5">
-        <div class="container">
-            <h1 class="text-center mb-4">My <span class="portfolio_taital_1">Portfolio</span></h1>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="portfolio_item position-relative">
-                        <img src="images/img-1.png" class="img-fluid" alt="Project 1">
-                        <div class="overlay position-absolute d-flex justify-content-center align-items-center">
-                            <a href="#" class="btn btn-light">See More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio_item position-relative">
-                        <img src="images/img-2.png" class="img-fluid" alt="Project 2">
-                        <div class="overlay position-absolute d-flex justify-content-center align-items-center">
-                            <a href="#" class="btn btn-light">See More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">See More</a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Blog Section -->
-    <!-- <section class="blog_section layout_padding py-5">
-        <div class="container">
-            <h1 class="text-center mb-4">My <span class="blog_taital_1">Blog</span></h1>
-            <p class="text-center mb-5">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="blog_box">
-                        <div class="blog_img">
-                            <h4 class="date_text">Jun 05</h4>
-                            <h4 class="prep_text">Veniam, quis nostrud</h4>
-                        </div>
-                        <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod magna non metus placerat.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog_box">
-                        <div class="blog_img">
-                            <h4 class="date_text">Jun 05</h4>
-                            <h4 class="prep_text">Veniam, quis nostrud</h4>
-                        </div>
-                        <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod magna non metus placerat.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog_box">
-                        <div class="blog_img">
-                            <h4 class="date_text">Jun 05</h4>
-                            <h4 class="prep_text">Veniam, quis nostrud</h4>
-                        </div>
-                        <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod magna non metus placerat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-        </div>
-    </section> -->
+    
 
     <!-- Contact Section -->
-    <section class="contact_section layout_padding py-5">
+    <section class="contact-section py-5" id="contact">
         <div class="container">
-            <h1 class="text-center mb-4">Contact Me</h1>
+            <h2 class="text-center mb-5">Contact Me</h2>
             <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Your Name">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group col-md-6">
-                        <input type="email" class="form-control" placeholder="Your Email">
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
                     </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Phone">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Phone" required>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Send Now</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
             </form>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer_section py-4">
-        <div class="container">
-            <div class="location_text text-center">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-map-marker"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-phone"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-            </div>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2025 Joy Seno. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+        </ul>
     </footer>
 
     <!-- Bootstrap JS & jQuery -->
