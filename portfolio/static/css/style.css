@@ -1,4 +1,8 @@
-
+.header_section {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
 img{
     width: 200px;
     left: 20px;
