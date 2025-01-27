@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/project">Projects</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Services</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="resume" class="container mt-5">
+            <h2 class="text-center mb-4">Resume</h2>
+    
+        
+            <div class="container mt-5">
+                <!-- Education Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Higher Secondary School</h4>
+                        <p>SRV Government Higher Secondary School, 2019 - 2021</p>
+                        <ul>
+                            <li>Science Stream</li>
+                            <li>Achieved 70% in final exams</li>
+                        </ul>
+                    </div>
+                </div>
+                   <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 . All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>    
+</body>
+</html>

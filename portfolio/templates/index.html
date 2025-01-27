@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
@@ -24,11 +25,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sec">Services</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@
     <section class="banner-section-img" style="padding: 10px;">
         <div class="container text-center">
             <!-- Image at the top, centered -->
-            <img src="{{ url_for('static',filename='image/img-2.png') }}" alt="Arya" class=" mb-4" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="{{ url_for('static',filename='image/blog-bg.png') }}" alt="Arya" class=" mb-4" style="width: 250px; height: 250px; object-fit: cover; ">
             
         </div>
     </section>
@@ -54,23 +55,22 @@
             <h2 class="text-center mb-5">My Projects</h2>
             <div class="row">
                 <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('/static/image/r.jpg'); background-size: cover; background-position: center;">
+                        <h4  style="color: rgb(22, 8, 8);">Tiara Jewels</h4>
+                        <a href="https://tiarajewels.pythonanywhere.com "><p style="color: rgb(31, 10, 10);"> click</p></a>
+                    </div>
+                    <p>Jewels</p>
+                </div>
+                <div class="col-md-4">
                     <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;">
                         <h4>Web Design</h4>
                         <p>Creating beautiful and functional web experiences.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('https://via.placeholder.com/300'); background-size: cover; background-position: center;">
-                        <i class="fa fa-mobile-alt fa-3x mb-3"></i>
-                        <h4>Responsive Design</h4>
-                        <p>Ensuring your website looks great on all devices.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('https://via.placeholder.com/300'); background-size: cover; background-position: center;">
-                        <i class="fa fa-laptop-code fa-3x mb-3"></i>
-                        <h4>Web Development</h4>
-                        <p>Building powerful websites with the latest technologies.</p>
+                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;">
+                        <h4>Web Design</h4>
+                        <p>Creating beautiful and functional web experiences.</p>
                     </div>
                 </div>
             </div>
@@ -79,41 +79,106 @@
 
     <section id="resume" class="container mt-5">
         <h2 class="text-center mb-4">Resume</h2>
+
     
-        <!-- Professional Experience -->
-        <div class="resume-section">
-            <h4 class="section-title">Professional Experience</h4>
-    
-            <div class="resume-item">
-                <h5 class="job-title">Job Title</h5>
-                <p class="company-details"><strong>Company Name</strong> | City, State | <span class="text-muted">January 2020 - Present</span></p>
-                <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #1</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #2</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #3</li>
-                </ul>
+        <div class="container mt-5">
+            <!-- Education Section -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Higher Secondary School</h4>
+                    <p>SRV Government Higher Secondary School, 2019 - 2021</p>
+                    <ul>
+                        <li>Science Stream</li>
+                        <li>Achieved 70% in final exams</li>
+                    </ul>
+                </div>
             </div>
     
-            <div class="resume-item">
-                <h5 class="job-title">Previous Job Title</h5>
-                <p class="company-details"><strong>Previous Company Name</strong> | City, State | <span class="text-muted">January 2018 - December 2019</span></p>
-                <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #1</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #2</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i> Responsibility or achievement #3</li>
-                </ul>
+            <!-- Skills Section -->
+            <div>
+                <h4 class="mb-3">Skills</h4>
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="skill-box">
+                            <p>HTML</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="skill-box">
+                            <p>CSS</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="skill-box">
+                            <p>JavaScript</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 45%;">45%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="skill-box">
+                            <p>Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%;">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="skill-box">
+                            <p>SQLite3</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%;">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    
-        <!-- Education Section -->
-        <div class="resume-section">
-            <h4 class="section-title">Education</h4>
-            <div class="resume-item">
-                <h5 class="degree-title">Degree or Diploma</h5>
-                <p class="school-details"><strong>School Name</strong> | City, State | Graduation: 2017</p>
-                <p>Relevant Coursework: Course 1, Course 2, Course 3</p>
+         <!-- <div class="main"> -->
+            <!-- Projects Section -->
+            <!-- <div class="mt-4">
+                <h4>Projects</h4>
+                <p>Highlights of my projects.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="VL Store">
+                            <div class="card-body">
+                                <h5 class="card-title">VL Store</h5>
+                                <p class="card-text">Online Provision Store</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="Inquestor">
+                            <div class="card-body">
+                                <h5 class="card-title">Inquestor</h5>
+                                <p class="card-text">Online Private Investigation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="Odin Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Odin Project</h5>
+                                <p class="card-text">Clone Website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div> -->
+        
+        
+        
     
         <!-- Skills Section -->
         <div class="resume-section">
@@ -124,38 +189,10 @@
                 <li class="list-inline-item skill-item">HTML</li>
             </ul>
         </div>
-        
+        </div>
     
-        <!-- Certifications Section -->
-        <div class="resume-section">
-            <h4 class="section-title">Certifications</h4>
-            <ul class="list-unstyled">
-                <li>Certification Name | Issuing Organization | Date</li>
-            </ul>
-        </div>
-    </section>
+  
     
-    <div class="container mt-3">
-        
-        <div class="progress">
-          <div class="progress-bar" style="width:50%">70%</div>
-        </div>
-      </div><div class="container mt-3">
-        
-        <div class="progress">
-          <div class="progress-bar" style="width:50%">70%</div>
-        </div>
-      </div><div class="container mt-3">
-        
-        <div class="progress">
-          <div class="progress-bar" style="width:50%">70%</div>
-        </div>
-      </div><div class="container mt-3">
-        <!-- <h2>Progress Bar With Label</h2> -->
-        <div class="progress">
-          <div class="progress-bar" style="width:50%">70%</div>
-        </div>
-      </div>
     
   
 
@@ -186,7 +223,8 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+
+    <footer id="sec" class="footer">
         <p>&copy; 2025 . All Rights Reserved.</p>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>

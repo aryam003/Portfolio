@@ -11,13 +11,13 @@ body {
     color: white !important;
 }
 .banner-section {
-    background-image: url('/static/image/blog-bg.png') !important;
+    /* background-image: url('/static/image/blog-bg.png') !important; */
     background-size: cover;
     color: rgb(7, 7, 7);
     text-align: center;
     padding: 100px 0;
     /* height: 500px; */
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
 }
 .banner-text {
     font-size: 2.5em;
@@ -72,98 +72,35 @@ body {
     position: relative;
     z-index: 2;
 }
-/* General styles */
-body {
+.main {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
-h2 {
-    color: #007bff;
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.cart-body{
+    text-align: center;
+}
+.skill-box p {
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
-h4.section-title {
-    color: #007bff;
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.resume-section {
-    margin-bottom: 40px;
-}
-
-.resume-item {
-    margin-bottom: 30px;
-}
-
-.job-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-}
-
-.company-details {
-    font-style: italic;
-    color: #555;
-}
-
-.degree-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-}
-
-.school-details {
-    font-style: italic;
-    color: #555;
-}
-
-ul.skills-list {
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill-item {
+.progress-bar {
     background-color: #007bff;
+    text-align: center;
     color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-ul.list-unstyled li {
-    font-size: 1em;
-    color: #555;
-}
-
-ul.list-unstyled li i {
-    margin-right: 10px;
-}
-
-/* Adding Bootstrap icons */
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
-
-/* Add a little border and shadow to resume items */
-.resume-item {
-    border-left: 4px solid #007bff;
-    padding-left: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
-}
-
-/* Hover effect on skills */
-.skill-item:hover {
-    background-color: #0056b3;
-    cursor: pointer;
-}
-
-/* Make the resume section more readable */
-.resume-section p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 20px;
 }
