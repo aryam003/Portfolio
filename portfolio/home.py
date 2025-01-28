@@ -6,18 +6,17 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
+    # if request.method=='POST':
+    #     name =request.form['name']
+    #     email =request.form['email']
+    #     # print(name,place)
+    #     con=sqlite3.connect('flaskform.db')
+    #     # con.execute("create table form(name text,place text)")
+    #     # print('table exists.')    
+    #     con.execute("insert into form(name,place)values(?,?)",(name,place))
+    #     con.commit()
     return render_template('index.html')
     
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
 
-@app.route('/project')
-def project():
-    return render_template('project.html')
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
 
 app.run()
