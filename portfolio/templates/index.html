@@ -24,62 +24,35 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/project">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sec">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Myself</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Banner Section -->
-    <section class="banner-section">
+    <section class="banner-section" id="home">
         <div class="container">
-            <h2 class="banner-text">Hello, I'm Arya</h2>
-            <p class="lead">Full-Stack Web Developer</p>
+           
+            <section class="banner-section-img" style="padding: 5px;">
+                <div class="container text-center">
+                    <!-- Image at the top, centered -->
+                    <img src="{{ url_for('static',filename='image/myself.jpg') }}" alt="Arya" class=" mb-4" style="width: 300px; height: 300px; object-fit: cover; border-radius: 10%;">
+                    <h2 class="banner-text">Hello, I'm Arya</h2>
+                    <p class="">Full-Stack Web Developer</p>
+                </div>
+            </section>
         </div>
     </section>
-    <section class="banner-section-img" style="padding: 10px;">
-        <div class="container text-center">
-            <!-- Image at the top, centered -->
-            <img src="{{ url_for('static',filename='image/blog-bg.png') }}" alt="Arya" class=" mb-4" style="width: 250px; height: 250px; object-fit: cover; ">
-            
-        </div>
-    </section>
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/r.jpg'); background-size: cover; background-position: center;">
-                        <h4  style="color: rgb(22, 8, 8);">Tiara Jewels</h4>
-                        <a href="https://tiarajewels.pythonanywhere.com "><p style="color: rgb(31, 10, 10);"> click</p></a>
-                    </div>
-                    <p>Jewels</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;">
-                        <h4>Web Design</h4>
-                        <p>Creating beautiful and functional web experiences.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;">
-                        <h4>Web Design</h4>
-                        <p>Creating beautiful and functional web experiences.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume" class="container mt-5">
-        <h2 class="text-center mb-4">Resume</h2>
-
+    <section id="about" class="container mt-5" style="padding-top: 100px;">
+        <!-- <h2 class="text-center mb-4">Resume</h2> -->
+        <button type="" class="btn btn-primary text-center mb-6">Resume</button>
+        
     
         <div class="container mt-5">
             <!-- Education Section -->
@@ -92,11 +65,64 @@
                         <li>Achieved 70% in final exams</li>
                     </ul>
                 </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Higher Secondary School</h4>
+                        <p>SRV Government Higher Secondary School, 2019 - 2021</p>
+                        <ul>
+                            <li>Science Stream</li>
+                            <li>Achieved 70% in final exams</li>
+                        </ul>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Higher Secondary School</h4>
+                            <p>SRV Government Higher Secondary School, 2019 - 2021</p>
+                            <ul>
+                                <li>Science Stream</li>
+                                <li>Achieved 70% in final exams</li>
+                            </ul>
+                        </div>
+            
+
+            <section class="banner-section-1" style="background-size: cover;color: rgb(7, 7, 7);text-align: center;background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));  width: 100%; height: 30px;">
+                <div class="container">
+                    <section class="banner-section-img" style="padding: 5px;">
+                        <div class="container text-center">
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+    <!-- Services Section -->
+    <section id="project" style="padding-top: 100px;" class="services-section-project">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('/static/image/r.jpg'); background-size: cover; background-position: center; border-radius: 10%;">
+                        <h4  style="color: rgb(22, 8, 8);">Tiara Jewels</h4>
+                        <a href="https://tiarajewels.pythonanywhere.com "><p style="color: rgb(31, 10, 10);"> click</p></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;  border-radius: 10%;">
+                        <h4>Web Design</h4>
+                        <p>Creating beautiful and functional web experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;  border-radius: 10%;">
+                        <h4>Web Design</h4>
+                        <p>Creating beautiful and functional web experiences.</p>
+                    </div>
+                </div>
             </div>
-    
+        </div>
+    </section>
+ 
             <!-- Skills Section -->
-            <div>
-                <h4 class="mb-3">Skills</h4>
+                <h4 id="skills" style="padding-top: 100px;" class="mb-3">Skills</h4>
                 <div class="row">
                     <div class="col-6 col-md-4 mb-3">
                         <div class="skill-box">
@@ -139,65 +165,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-         <!-- <div class="main"> -->
-            <!-- Projects Section -->
-            <!-- <div class="mt-4">
-                <h4>Projects</h4>
-                <p>Highlights of my projects.</p>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="VL Store">
-                            <div class="card-body">
-                                <h5 class="card-title">VL Store</h5>
-                                <p class="card-text">Online Provision Store</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="Inquestor">
-                            <div class="card-body">
-                                <h5 class="card-title">Inquestor</h5>
-                                <p class="card-text">Online Private Investigation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="{{ url_for('static',filename='image/u.jpeg') }}" class="card-img-top" alt="Odin Project">
-                            <div class="card-body">
-                                <h5 class="card-title">Odin Project</h5>
-                                <p class="card-text">Clone Website</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+            
         
-        
-        
-    
-        <!-- Skills Section -->
-        <div class="resume-section">
-            <h4 class="section-title">Skills</h4>
-            <ul class="list-inline skills-list">
-                <li class="list-inline-item skill-item">Python</li>
-                <li class="list-inline-item skill-item">CSS</li>
-                <li class="list-inline-item skill-item">HTML</li>
-            </ul>
-        </div>
-        </div>
-    
-  
-    
-    
+
+
   
 
     <!-- Contact Section -->
-    <section class="contact-section py-5" id="contact">
+    <section class="contact-section-mail py-5" style="padding-top: 100px;" id="contact">
         <div class="container">
             <h2 class="text-center mb-5">Contact Me</h2>
             <form>
@@ -221,18 +196,17 @@
             </form>
         </div>
     </section>
+ 
+    <section class="banner-section-" style="background-size: cover;color: rgb(7, 7, 7);text-align: center;background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));  width: 100%; height: 30px;">
+        <div class="container">
+            <section class="banner-section-img" style="padding: 5px;">
+                <div class="container text-center">
+                </div>
+            </section>
+        </div>
+    </section>
+    
 
-    <!-- Footer Section -->
-
-    <footer id="sec" class="footer">
-        <p>&copy; 2025 . All Rights Reserved.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </footer>
 
     <!-- Bootstrap JS & jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
