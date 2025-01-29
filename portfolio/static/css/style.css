@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(254, 254, 254);
     margin-top: 0;
 }
 .navbar {
@@ -19,7 +19,7 @@ body {
 .banner-section {
     /* background-image: url('/static/image/me2.jpg') !important ; */
     background-size: cover;
-    color: rgb(7, 7, 7);
+    color: rgb(243, 239, 239);
     text-align: center;
     padding: 50px 0;
     /* height: 500px; */
@@ -145,7 +145,7 @@ body {
         }
         
         .progress {
-            height: 8px;
+            height: 20px;
             background-color: #e9ecef;
             border-radius: 5px;
             margin-top: 5px;
@@ -153,10 +153,111 @@ body {
         
         .progress-bar {
             background-color: rgb(58, 68, 160);
-            color: rgb(16, 32, 122);
+            color: rgb(230, 232, 239);
             text-align: center;
             font-size: 12px;
             border-radius: 5px;
-            height: 200px;
+            /* height: 200px; */
 
         }
+        /* General styles */
+.project-card {
+    border: 1px solid #ddd; /* Light border for the card */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.project-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover; /* Ensures image covers area */
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text for contrast */
+    margin-top: 15px;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+    padding: 0 15px; /* Padding on left and right */
+    line-height: 1.6;
+}
+
+/* Buttons container */
+.d-flex {
+    padding-bottom: 20px;
+}
+
+#button {
+    padding: 10px 20px; /* Padding around buttons */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px; /* Rounded buttons */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#button i {
+    margin-right: 8px;
+}
+
+/* "View Project" Button */
+a#button {
+    background-color: #2b2784;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+a#button:hover {
+    background-color: #14085a;
+    color: white;
+}
+
+/* "Visit Site" Button */
+a.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+a.btn-secondary:hover {
+    background-color: #19267e;
+    color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .project-image {
+        max-height: 180px; /* Slightly smaller images on mobile */
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}

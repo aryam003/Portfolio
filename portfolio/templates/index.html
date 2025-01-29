@@ -12,7 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -42,78 +42,56 @@
             <section class="banner-section-img" style="padding: 5px;">
                 <div class="container text-center">
                     <!-- Image at the top, centered -->
-                    <img src="{{ url_for('static',filename='image/myself.jpg') }}" alt="Arya" class=" mb-4" style="width: 300px; height: 300px; object-fit: cover; border-radius: 10%;">
-                    <h2 class="banner-text">Hello, I'm Arya</h2>
+                    <img src="{{ url_for('static',filename='image/me3.jpg') }}" alt="Arya" class=" mb-4" style="width: 300px; height: 350px; object-fit: cover; border-radius: 10%;">
+                    <h4 class="banner-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hello, I'm Arya</h4>
                     <p class="">Full-Stack Web Developer</p>
                 </div>
             </section>
         </div>
     </section>
-    <section id="about" class="container mt-5" style="padding-top: 50px;">
-        <!-- <h2 class="text-center mb-4">Resume</h2> -->
-        <button type="" style="background-color:rgb(56, 56, 138);color:rgb(255, 255, 255);" class="btn  text-center mb-6">Resume</button>
-        
-    
-        <div class="container mt-5">
-            <!-- Education Section -->
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h4>Higher Secondary School</h4>
-                    <p>SRV Government Higher Secondary School, 2019 - 2021</p>
-                    <ul>
-                        <li>Science Stream</li>
-                        <li>Achieved 70% in final exams</li>
-                    </ul>
-                </div>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h4>Higher Secondary School</h4>
-                        <p>SRV Government Higher Secondary School, 2019 - 2021</p>
-                        <ul>
-                            <li>Science Stream</li>
-                            <li>Achieved 70% in final exams</li>
-                        </ul>
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4>Higher Secondary School</h4>
-                            <p>SRV Government Higher Secondary School, 2019 - 2021</p>
-                            <ul>
-                                <li>Science Stream</li>
-                                <li>Achieved 70% in final exams</li>
-                            </ul>
-                        </div>
-                </div>
-            </section>
-
-    <!-- Services Section -->
-    <section id="project" style="padding-top: 50px; padding: 5%;" class="services-section-project">
-        <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
+    <section id="project" class="mt-5">
+        <div class="container" id="projects1">
+            <h1   class="mb-5 mt-3 text-center" > My Projects</h1>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/r.jpg'); background-size: cover; background-position: center; ">
-                        <h4  style="color: rgb(22, 8, 8);">Tiara Jewels</h4>
-                        <a href="https://tiarajewels.pythonanywhere.com "><p style="color: rgb(31, 10, 10);"> click</p></a>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card" >
+                        <img src="{{ url_for('static', filename='/image/tj.png') }}" alt="Project 1" class="project-image img-fluid">
+                        <div class="project-content">
+                            <!-- <h6>TIARA JEWELS</h6> -->
+                                 <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="https://github.com/aryam003/Jewels_project" class="" id="button" target="_blank"><i class="bi bi-github"></i>View </a>
+                            <a href="https://tiarajewels.pythonanywhere.com/" class="btn btn-secondary" id="button" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;  ">
-                        <h4>Web Design</h4>
-                        <p>Creating beautiful and functional web experiences.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card" >
+                        <img src="{{ url_for('static', filename='/image/bm.png') }}" alt="Project 1" class="project-image img-fluid">
+                        <div class="project-content">
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="https://github.com/aryam003/BookMyShow-clone" class="" id="button" target="_blank"><i class="bi bi-github"></i>View</a>
+                            <a href="https://aryam003.github.io/BookMyShow-clone/bookmyshow.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit Site</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-box" style="background-image: url('/static/image/blog-bg.png'); background-size: cover; background-position: center;  ">
-                        <h4>Web Design</h4>
-                        <p>Creating beautiful and functional web experiences.</p>
+
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <img src="{{ url_for('static', filename='/image/o.png') }}" alt="Project 1" class="project-image img-fluid">
+                        <div class="project-content">
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                                    <a href="https://github.com/aryam003/oppo-clone" class="btn btn-primary" id="button" target="_blank"><i class="bi bi-github"></i> View </a>
+                                    <a href="https://aryam003.github.io/oppo-clone/oppo.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit site </a>
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+        </div>
         </div>
     </section>
- 
-    <div class="container my-5">
+    <div class="container my-5" id="skills">
         <h2 class="text-center fw-bold">Skills</h2>
         <p class="text-center text-muted">Here are some of my technical skills.</p>
         
@@ -138,7 +116,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript">
                 <p>JavaScript</p>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 50%;height: 200px;">50%</div>
+                    <div class="progress-bar" style="width: 50%;">50%</div>
                 </div>
             </div>
     
@@ -159,37 +137,69 @@
             </div>
         </div>
     </div>
+    <section id="about">
+        <div id="education" class="container">
+        <h1 id="about" class="text-center mb-4" >Education</h1>
+        <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
+        class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+       <div class="card-body text-white text-center">
+           <h5 id="about1" class="card-title">PYTHON FULL-STACK</h5>
+           <h6 id="text" class="card-text">SYNNEFO SOLUTIONS Kochi</h6>
+           <h6 id="num">2024-2025</h6>
+       </div>
+   </div>
+   
+   <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));" 
+        class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+       <div class="card-body text-white text-center">
+           <h5 id="about1" class="card-title">BCOM CA</h5>
+           <h6 id="text" class="card-text"></h6>
+           <h6 id="num">2021-2024</h6>
+       </div>
+   </div>
+   <!-- <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));" 
+        class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+       <div class="card-body text-white text-center">
+           <h5 id="about1" class="card-title"></h5>
+           <h6 id="text" class="card-text">IHRD Nadapuram</h6>
+           <h6 id="num">2021-2024</h6>
+       </div>
+   </div> -->
+
+   
+    </div>
             
-        
-
-
-  
-
-    <!-- Contact Section -->
-    <section class="contact-section-mail py-5" style="padding-top: 200px;" id="contact">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Me</h2>
-            <form>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
+<!-- Contact Section -->
+<section class="contact-section-mail py-5" style="padding-top: 200px;" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <form method="POST" action="/send_mail">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Phone" required>
+                <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="submit" style="background-color:rgb(56, 56, 138);color:rgb(253, 253, 255);" class="btn">Send Message</button>
-                </div>
-            </form>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="phone" placeholder="Your Phone" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" style="background-color:rgb(56, 56, 138);color:rgb(253, 253, 255);" class="btn">Send Message</button>
+            </div>
+        </form>
+        {% if success %}
+        <div class="alert alert-success mt-3 text-center">
+            Your message has been sent successfully!
         </div>
-    </section>
+        {% endif %}
+    </div>
+</section>
+
  
 
     
