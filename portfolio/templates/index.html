@@ -42,7 +42,7 @@
             <section class="banner-section-img" style="padding: 5px;">
                 <div class="container text-center">
                     <!-- Image at the top, centered -->
-                    <img src="{{ url_for('static',filename='image/me3.jpg') }}" alt="Arya" class=" mb-4" style="width: 300px; height: 300px; object-fit: cover; border-radius: 100%;">
+                    <img src="{{ url_for('static',filename='image/me2.jpg') }}" alt="Arya" class=" mb-4" style="width: 300px; height: 300px; object-fit: cover; border-radius: 100%;">
                     <h4 class="banner-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hello, I'm Arya</h4>
                     <p class="">Full-Stack Web Developer</p>
                 </div>
@@ -51,30 +51,33 @@
     </section>
     <section class="about-section py-5" id="about">
         <div class="container text-center">
-            <h3 class="display-4">About Me</h3>
+            <h3 class="display-6">About Me</h3>
             <div class="row justify-content-center">
+                <!-- Move the image here to appear first -->
                 <div class="col-md">
-                    <img src="{{ url_for('static',filename='image/me2.jpg') }}" class="img-fluid" alt="Profile Picture" style="border-radius: 5px; height: 300px;">
+                    <img src="{{ url_for('static', filename='image/me2.jpg') }}" class="img-fluid" alt="Profile Picture" style="border-radius: 5px; height: 300px;">
                 </div>
-                <div class="col-md-7">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
                     <div class="lead mt-2">
                         <p>Hi, I'm <strong>Arya</strong>, a passionate web developer. <br>
-                        I'm always looking for new challenges that help me grow.</p>
-                        <p>
-                            I believe in delivering high-quality work that not only meets client expectations 
-                            but also pushes boundaries to create something new.
-                        </p>
+                            I'm always eager to learn new technologies and improve my skills with every project.</p>
+                            <p>
+                                I’m committed to creating clean, efficient, and scalable web solutions that not only meet user needs 
+                                but also offer exceptional user experiences and performance.
+                            </p>
                     </div>
-                    <div class="social-links mt-3" >
-                        <a href="" class="btn btn" style="background-color: rgb(57, 57, 120); color: antiquewhite;">GitHub</a>
-                        <a href="#" class="btn btn" style="background-color: rgb(57, 57, 120); color: antiquewhite;">Instagram</a>
+                    <div class="social-links mt-3">
+                        <a href="https://github.com/aryam003" class="btn btn" style="background-color: rgb(21, 4, 117); color: antiquewhite;">GitHub</a>
+                        <!-- <a href="#" class="btn btn" style="background-color: rgb(211, 172, 104); color: antiquewhite;">Instagram</a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="project" class="mt-5">
-        <div class="container" id="projects1">
+        <div class="container">
             <h1   class="mb-5 mt-3 text-center" > My Projects</h1>
             <div class="row">
                 <div class="col-md-4 mb-4">
@@ -162,9 +165,21 @@
         </div>
     </div>
     <section id="resume">
+        <section id="section-resume" class="py-5">
+            <div class="container text-center">
+                <h6 class="mb-5" style="font-size: 2.5rem;">My Resume</h6>
+                <p class="lead mb-4">Click below to either view or download my resume.</p>
+                <a href="path/to/your/resume.pdf" target="_blank" class="btn" style="background-color: rgb(21, 4, 117) ;color: whitesmoke;">
+                    <i class="bi bi-download"></i> View My Resume
+                </a>
+            </div>
+        </section>
+    </section>
+    
+        
         <div id="education" class="container">
         <h1 id="about" class="text-center mb-4" >Education</h1>
-        <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
+        <div style="background:  linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
         class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
        <div class="card-body text-white text-center">
            <h5 id="about1" class="card-title">PYTHON FULL-STACK</h5>
@@ -173,7 +188,7 @@
        </div>
    </div>
    
-   <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));" 
+   <div style=" background:  linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
         class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
        <div class="card-body text-white text-center">
            <h5 id="about1" class="card-title">BCOM CA</h5>
@@ -213,7 +228,7 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" style="background-color:rgb(56, 56, 138);color:rgb(253, 253, 255);" class="btn">Send Message</button>
+                <button type="submit" style="background-color:rgb(105, 126, 209);color:rgb(15, 15, 83);" class="btn">Send Message</button>
             </div>
         </form>
         {% if success %}
