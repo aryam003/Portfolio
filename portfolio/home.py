@@ -1,5 +1,6 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request, send_from_directory
 from flask_mail import Mail, Message
+import os
 
 app = Flask(__name__)
 app.config['MAIL_SERVER']='smtp.gmail.com'
@@ -41,6 +42,13 @@ def send_message():
     """
     mail.send(msg)
     return render_template('index.html', success=True)
+
+@app.route('/download_resume')
+def download_resume():
+    # Define the path to the PDF in your static folder
+    return send_from_directory(directory=os.path.join(app.root_path, 'static'),
+                               path='My Resume.pdf',
+                               as_attachment=True)
 
 
 app.run()
