@@ -7,12 +7,8 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
-    /* background-color: rgb(204, 127, 127); */
-    
-    background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));
-    /* background: linear-gradient(to right,rgb(207, 171, 87), rgb(233, 204, 137),rgb(234, 207, 144),rgb(207, 168, 79)); */
-    
+    z-index: 1000;    
+    background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));    
 
 }
 .navbar a {
