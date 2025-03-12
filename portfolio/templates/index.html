@@ -61,7 +61,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-9">
-                    <div class="lead mt-2">
+                    <div class="leds mt-2">
                         <p class="intro-text">Hi, I'm <strong>Arya</strong>, a passionate web developer. <br>
                             I'm always eager to learn new technologies and improve my skills with every project.</p>
                         <p class="commitment-text">
@@ -73,8 +73,8 @@
             </div>
             
                     <div class="social-links mt-3">
-                        <a href="https://github.com/aryam003" class="btn btn" style="background-color: rgb(21, 4, 117); color: antiquewhite;"><i class="bi bi-github"></i>GitHub</a>
-                        <a href="https://www.linkedin.com/in/arya-m-02a90527a/" class="btn btn" style="background-color: rgb(21, 4, 117); color: antiquewhite;"><i class="bi bi-linkedin"></i>linkedin</a>
+                        <a href="https://github.com/aryam003" class="btn btn" style="background-color: rgba(255, 255, 255, 0.552); color: rgb(16, 14, 12);"><i class="bi bi-github"></i>  github</a>
+                        <a href="https://www.linkedin.com/in/arya-m-02a90527a/" class="btn btn" style="background-color: rgba(255, 252, 252, 0.552); color: rgb(9, 6, 3);"><i class="bi bi-linkedin"></i>   linkedin</a>
                     </div>
                 </div>
             </div>
@@ -87,40 +87,40 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="project-card" >
-                        <img src="{{ url_for('static', filename='/image/tj.png') }}" alt="Project 1" class="project-image img-fluid">
+                        <a href="https://tiarajewels.pythonanywhere.com/"><img src="{{ url_for('static', filename='/image/tj.png') }}" alt="Project 1" class="project-image img-fluid"></a>
                         <div class="project-content">
                             <!-- <h6>TIARA JEWELS</h6> -->
                                  <div class="d-flex flex-wrap justify-content-center gap-3">
-                            <a href="https://github.com/aryam003/Jewels_project" class="" id="button" target="_blank"><i class="bi bi-github"></i>View </a>
+                            <a href="https://github.com/aryam003/Jewels_project" class="" id="button" target="_blank"><i class="bi bi-github"></i></a>
 
-                            <a href="https://tiarajewels.pythonanywhere.com/" class="btn btn-secondary" id="button" target="_blank">Visit Site</a>
+                            <!-- <a href="https://tiarajewels.pythonanywhere.com/" class="btn btn-secondary" id="button" target="_blank">Visit Site</a> -->
                         </div>
                     </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="project-card" >
-                        <img src="{{ url_for('static', filename='/image/bm.png') }}" alt="Project 1" class="project-image img-fluid">
+                        <a href=""><img src="{{ url_for('static', filename='/image/kp.png') }}" alt="Project 1" class="project-image img-fluid"></a>
                         <div class="project-content">
                                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                            <a href="https://github.com/aryam003/BookMyShow-clone" class="" id="button" target="_blank"><i class="bi bi-github"></i>View</a>
-                            <a href="https://aryam003.github.io/BookMyShow-clone/bookmyshow.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit Site</a>
+                            <a href="https://github.com/aryam003/K-pop-Paradise" class="" id="button" target="_blank"><i class="bi bi-github"></i></a>
+                            <!-- <a href="https://aryam003.github.io/BookMyShow-clone/bookmyshow.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit Site</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card" >
+                        <a href="https://aryam003.github.io/BookMyShow-clone/bookmyshow.html"><img src="{{ url_for('static', filename='/image/bm.png') }}" alt="Project 1" class="project-image img-fluid"></a>
+                        <div class="project-content">
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="https://github.com/aryam003/BookMyShow-clone" class="" id="button" target="_blank"><i class="bi bi-github"></i></a>
+                            <!-- <a href="https://aryam003.github.io/BookMyShow-clone/bookmyshow.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit Site</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <img src="{{ url_for('static', filename='/image/o.png') }}" alt="Project 1" class="project-image img-fluid">
-                        <div class="project-content">
-                                <div class="d-flex flex-wrap justify-content-center gap-3">
-                                    <a href="https://github.com/aryam003/oppo-clone" class="btn btn-primary" id="button" target="_blank"><i class="bi bi-github"></i> View </a>
-                                    <a href="https://aryam003.github.io/oppo-clone/oppo.html" class="btn btn-secondary" id="button" target="_blank"><i class="bi bi-github"></i>Visit site </a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
         </div>
         </div>
     </section>
@@ -173,7 +173,7 @@
             <div class="container text-center">
                 <h6 class="mb-5" style="font-size: 2.5rem;">My Resume</h6>
                 <p class="lead mb-4">Click below to either view or download my resume.</p>
-                <a href="{{ url_for('download_resume') }}" class="btn" style="background-color: rgb(21, 4, 117); color: whitesmoke;">
+                <a href="{{ url_for('download_resume') }}" class="btn" style="background-color: rgba(0, 0, 0, 0.552); color: whitesmoke;">
                     <i class="bi bi-download"></i> Download My Resume
                 </a>
             </div>
@@ -183,7 +183,7 @@
         
         <div id="education" class="container">
         <h1 id="about" class="text-center mb-4" >Education</h1>
-        <div style="background:  linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
+        <div style="background:  linear-gradient(to right,rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552))" 
         class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
        <div class="card-body text-white text-center">
            <h5 id="about1" class="card-title">PYTHON FULL-STACK</h5>
@@ -192,14 +192,14 @@
        </div>
    </div>
    
-   <div style=" background:  linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59))" 
+   <!-- <div style=" background:  linear-gradient(to right,rgba(0, 0, 0, 0.552) ,rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552))" 
         class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
        <div class="card-body text-white text-center">
            <h5 id="about1" class="card-title">BCOM CA</h5>
            <h6 id="text" class="card-text"></h6>
            <h6 id="num">2021-2024</h6>
        </div>
-   </div>
+   </div> -->
    <!-- <div style="background: linear-gradient(to right,rgb(21, 4, 117) ,rgb(108, 99, 157),rgb(76, 58, 177),rgb(10, 11, 59));" 
         class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
        <div class="card-body text-white text-center">
@@ -232,7 +232,7 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" style="background-color:rgb(105, 126, 209);color:rgb(15, 15, 83);" class="btn">Send Message</button>
+                <button type="submit" style="background-color:rgba(0, 0, 0, 0.552);color:rgb(219, 211, 211);" class="btn">Send Message</button>
             </div>
         </form>
         {% if success %}
